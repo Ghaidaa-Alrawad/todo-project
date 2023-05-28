@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header>
-        <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/1/1560.png" alt="Website logo" height="50"></a>
+        <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/1/1560.png" alt="Website logo" id="logo"></a>
         <nav>
             <ul>
                 <li>
@@ -20,10 +25,11 @@
         </nav>
     </header>
 
-    <hr>
+    <!-- <hr> -->
 
     <main>
-        <table>
+        <h1 id="todoList">ToDo List</h1>
+        <table id="table">
             <thead>
                 <tr>
                     <th>Tasks</th>
@@ -33,24 +39,21 @@
             <tbody>
                 <tr>
                     <td>Task 1</td>
-                    <td><input type="checkbox" name="task1"></td>
-                    <td>Done</td>
+                    <td><input type="checkbox" name="task1">Done</td>
                 </tr>
                 <tr>
                     <td>Task 2</td>
-                    <td><input type="checkbox" name="task2"></td>
-                    <td>Done</td>
+                    <td><input type="checkbox" name="task2">Done</td>
                 </tr>
                 <tr>
                     <td>Task 3</td>
-                    <td><input type="checkbox" name="task3"></td>
-                    <td>Done</td>
+                    <td><input type="checkbox" name="task3">Done</td>
                 </tr>
             </tbody>
         </table>
     </main>
 
-    <hr>
+    <!-- <hr> -->
 
     <footer>
         <p>Copy rights</p>
