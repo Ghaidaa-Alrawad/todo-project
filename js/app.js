@@ -14,10 +14,39 @@ if (!skipMessage){
     if(age <= 0){
         alert("Age must be greater than 0");
     }
+
+    // here the Yes or No Qs for lab 6: 
+
+    const questions = ["Is the sky blue?", "Is water wet?", "Do birds have feathers?"];
+    const answers = [];
     
+    //function 1
+    function pushQustionsToArray(){
+        
+        for (let i = 0; i <questions.length; i++){
+            var answer = prompt(questions[i] + " answer with Yes|No");
+            if (answer.toLowerCase !== "Yes" && answer.toLowerCase !== "No" && answer =="") {
+                answer = "invalid";
+            }
+            answers.push(answer);
+        }
+        
+    }
+
+    //function 2 (Traverse)
+    function print(){
+        for (let i = 0; i < answers.length; i++) {
+            console.log(answers[i]);
+        }
+        // console.log(answers);
+    }
+
+    pushQustionsToArray();
+    print();
+
     if(gender === "male"){
-        alert("Welcome Mr " + userName);
+        alert("Welcome Mr " + userName + " Thank you for answering :D");
     }else if(gender === "female"){
-        alert("Welcome Ms " + userName);
+        alert("Welcome Ms " + userName + " Thank you for answering :D");
     }
 }
